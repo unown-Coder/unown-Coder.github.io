@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Real-time HTML Editor</title>
+<title>HTML Editor</title>
+<meta name="description" content="A simple HTML editor. Also unblocked!" />
 <script type="text/javascript">
 
 var editboxHTML = 
@@ -21,11 +22,10 @@ var editboxHTML =
 '<\/body>' +
 '<\/html>';
 
-var defaultStuff = '<h3>Welcome to the real-time HTML editor!<\/h3>\n' +
+var defaultStuff = '<h3>Welcome to the HTML editor!<\/h3>\n' +
 '<p>Type HTML in the textarea above, and it will magically appear in the frame below.<\/p>';
 
-// I don't want this stuff to appear in the box at the top because I feel it's likely to be distracting.
-var extraStuff = '<div style="position:absolute; margin:.3em; bottom:0em; right:0em;"><small>\n  Created by <a href="http://www.squarefree.com/" target="_top">Jesse Ruderman<\/a> and hosted by <a href="http://www.dreamhost.com/rewards.cgi?jesseruderman" target="_top">DreamHost<\/a>.\n<\/small><\/div>';
+var extraStuff = '<div style="position:absolute; margin:.3em; bottom:0em; right:0em;"><small>\n  Created by <a href="https://github.com/unown-Coder" target="_top">unown_Coder<\/a> and hosted by <a href="https://pages.github.com" target="_top">GitHub Pages<\/a>.\n<\/small><\/div>';
 
 var old = '';
          
@@ -58,7 +58,6 @@ function update()
 </head>
 
 <frameset resizable="yes" rows="50%,*" onload="init();">
-  <!-- about:blank confuses opera, so use javascript: URLs instead -->
   <frame name="editbox" src="javascript:'';">
   <frame name="dynamicframe" src="javascript:'';">
 </frameset>
